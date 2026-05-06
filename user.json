@@ -1,0 +1,99 @@
+[
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+      "nodemon": "^3.1.14"
+    }
+  },
+  {
+    "name": "isaac",
+    "age": "34",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "isaac",
+    "age": "34",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "iaac",
+    "age": "44",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "iaac",
+    "age": "44",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "henry",
+    "age": "48",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "henry",
+    "age": "48",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "henry",
+    "age": "48",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "henry",
+    "age": "47",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "henry",
+    "age": "22",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "henry",
+    "age": "22",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "henry",
+    "age": "255",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "hamza",
+    "age": "25",
+    "email": "abdulazeez4nice@gmail.com"
+  },
+  {
+    "name": "hamza",
+    "age": "25",
+    "email": ""
+  },
+  {
+    "name": "hamza",
+    "age": "29",
+    "email": ""
+  },
+  {
+    "name": "Atta",
+    "age": "30",
+    "email": ""
+  },
+  {
+    "name": "hamza",
+    "age": "500",
+    "email": "abdulazeez4nice@gmail.com"
+  }
+]
