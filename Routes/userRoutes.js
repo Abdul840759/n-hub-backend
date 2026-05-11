@@ -75,6 +75,78 @@ router.get("/users/count", (req, res) => {
 });
 
 
+//POST new user
+router.post("/users", (req, res) => {
+    const users = getUser();
+
+    const newUser= {
+        id:Date.now(),
+
+        ...req.body 
+    };
+
+    users.push(new user);
+    saveUser(users);
+    });
+//update user
+router.patch("/:id", (req, res) => {
+    //get user id from file
+    const usedrs = getUser();
+
+    //get user with id
+    const id = number(req.params.id);
+    //find user with id
+    const userindex = users.findIndex(user => user.id === id);
+
+    //check if user does not exist
+    if (userindex === -1) {
+        return res.json({
+            message: "User not found"
+        });
+    }
+
+    //udate user data
+    users[userindex] = {
+        //keep existing data and update with new data from request body
+        ...users[userindex],
+        //return all new data from request body and overwrite existing data with same keys
+        ...req.body
+    };
+
+    //save updated users to file
+    saveUser(users);
+res.json({
+    message: "User sucessfully updated",
+    users
+});
+});
+
+//delete user
+router.delete("/id", (req, res) => {
+    const users = getUser();
+    const id = number(req.params.id);
+    const userindex = users.findIndex(user => user.id === id);
+
+    if (userindex === -1) {
+        return res.json({
+            message: "User not found"
+        });
+    }
+
+    //remove user from array
+    const deletedUser = users.splice(userindex, 1)[0];
+
+    saveUser(users);
+
+    res.json({
+        message: "User sucessfully deleted",
+        deletedUser,
+        users
+    });
+
+});
+
+
 
 //user routes this is is to use the router in other files. such as server.js
 module.exports = router;
